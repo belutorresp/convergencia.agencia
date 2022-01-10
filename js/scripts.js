@@ -7,6 +7,14 @@
 // Scripts
 // 
 
+ //ScrollearA scrollea solo a la seccion Contacto cuando clickeas el boton.
+ function scrollToTarget(){
+    $('#portfolioModal1').modal("hide")
+
+    var contacto = document.getElementById("contact")
+    contacto.scrollIntoView({block: 'nearest', inline: 'start'});
+};
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -25,7 +33,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Shrink the navbar 
     navbarShrink();
-
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
 
@@ -50,5 +57,4 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
