@@ -10,10 +10,17 @@
  //ScrollearA scrollea solo a la seccion Contacto cuando clickeas el boton.
  function scrollToTarget(){
     $('#portfolioModal1').modal("hide")
+    $('#portfolioModal2').modal("hide")
+    $('#portfolioModal3').modal("hide")
+    $('#portfolioModal4').modal("hide")
+    $('#portfolioModal5').modal("hide")
+    $('#portfolioModal6').modal("hide")
 
     var contacto = document.getElementById("contact")
     contacto.scrollIntoView({block: 'nearest', inline: 'start'});
 };
+
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
